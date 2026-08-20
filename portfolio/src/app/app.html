@@ -1,0 +1,63 @@
+<main>
+  <!-- Hero -->
+  <section class="hero">
+    <p class="eyebrow">// portfolio.init()</p>
+    <h1>Dominik Babic</h1>
+    <p class="subtitle">Informatik-Student an der FH</p>
+
+    <div class="progress-line">
+      <span class="progress-label">Semester {{ semesterAktuell }} / {{ semesterGesamt }}</span>
+      <div class="progress-track">
+        <div class="progress-fill" [style.width.%]="semesterProzent"></div>
+      </div>
+    </div>
+
+    <p class="hero-text">
+      Ich baue mir gerade die Grundlagen auf — Projekte folgen, sobald es
+      etwas zu zeigen gibt. Bis dahin: viel Neugier, viele Übungsaufgaben.
+    </p>
+  </section>
+
+  <!-- Über mich -->
+  <section class="about">
+    <p class="eyebrow">// about.md</p>
+    <h2>Über mich</h2>
+    <p>
+      Ich bin im 3. Semester Informatik an der Fachhochschule und lerne
+      Schritt für Schritt, wie Software wirklich entsteht — von Algorithmen
+      über Datenbanken bis zu modernen Web-Frameworks wie Angular. Diese
+      Seite ist selbst ein kleines Übungsprojekt und wächst mit, sobald neue
+      Projekte dazukommen.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills">
+    <p class="eyebrow">// skills.list()</p>
+    <h2>Womit ich mich beschäftige</h2>
+    <ul class="skill-grid">
+      @for (skill of skills; track skill.name) {
+        <li class="skill-card">
+          <span class="skill-name">{{ skill.name }}</span>
+          <span class="skill-level">{{ skill.level }}</span>
+        </li>
+      }
+    </ul>
+  </section>
+
+  <!-- Kontakt -->
+  <section class="contact">
+    <p class="eyebrow">// contact.send()</p>
+    <h2>Kontakt</h2>
+    <p>Meld dich gern — auch wenn's nur zum Austausch übers Studium ist.</p>
+    <div class="contact-links">
+      <a href="mailto:deine-email@beispiel.at">E-Mail</a>
+      <a href="https://github.com/deinusername" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/deinusername" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>Dominik Babic — {{ semesterGesamt }} Semester bis zum Abschluss, {{ semesterAktuell }} geschafft.</p>
+  </footer>
+</main>
