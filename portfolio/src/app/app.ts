@@ -18,9 +18,9 @@ export class App {
   readonly skills: Skill[] = [
     { name: 'TypeScript', level: 'lernt gerade' },
     { name: 'Angular', level: 'lernt gerade' },
-    { name: 'Java', level: 'sicher im Umgang' },
+    { name: 'C#', level: 'sicher im Umgang' },
     { name: 'C', level: 'sicher im Umgang' },
-    { name: 'SQL / Datenbanken', level: 'lernt gerade' },
+    { name: 'SQL / Datenbanken', level: 'sicher im Umgang' },
     { name: 'Algorithmen & Datenstrukturen', level: 'lernt gerade' },
   ];
 
